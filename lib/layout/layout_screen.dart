@@ -40,7 +40,7 @@ class LayoutScreen extends StatelessWidget {
           return Scaffold(
             key: scaffoldkey,
             appBar: AppBar(
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.teal,
               // leading: cubit.bottomsheet ? IconButton(onPressed: (){
               //   Navigator.pop(context);
               //   cubit.changeBottomSheet(
@@ -66,7 +66,7 @@ class LayoutScreen extends StatelessWidget {
             ),
             floatingActionButton: FloatingActionButton(
                 shape: CircleBorder(),
-                backgroundColor: Colors.blue,
+                backgroundColor: Colors.teal,
                 child: Icon(
                   cubit.fabicon,
                   color: Colors.white,

@@ -18,6 +18,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: LayoutScreen(),
+      theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
+          appBarTheme: AppBarTheme(
+            backgroundColor: Colors.teal,
+            centerTitle: true,
+            titleTextStyle: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          bottomNavigationBarTheme: BottomNavigationBarThemeData(
+            backgroundColor: Colors.teal,
+            type: BottomNavigationBarType.fixed,
+            selectedItemColor: Colors.white,
+            selectedIconTheme: IconThemeData(size: 30),
+            unselectedItemColor: Colors.grey[300],
+          )),
     );
   }
 }

@@ -31,7 +31,7 @@ Widget defultTaskitem (Map model,context) => Dismissible(
       children: [
         CircleAvatar(
           radius: 40.0,
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.teal,
           child: Text(
             '${model['time']}',
             style: TextStyle(
